@@ -27,3 +27,16 @@ body{
     width: 150px;
     height: 150px;
 }
+
+a{
+    color: white;
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 1em;     
+    margin: -1em;
+}
+
+a:link{
+    text-decoration: none;
+}
