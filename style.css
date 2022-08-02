@@ -1,12 +1,30 @@
 body{
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-color: #171544;
+}
+
+#homepage{
     background-image: url('./earth-bkrnd.jpg');
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-color: #171544;
 }
 
+#AgOwnership{
+    background-image: url('./AgriculturePhoto.jpg');
+    background-size: 100vw 60vh;
+    background-repeat: no-repeat;
+    background-color: #171544;
+}
+
+.stickyheader {
+    position: fixed;
+    width: 100%;
+    background-color:rgb(0,0,0,0.7);
+    }
 .header{
-    height: 0.5in;
+    height: 0.7in;
 }
 
 .bkgimage{
@@ -40,3 +58,4 @@ a{
 a:link{
     text-decoration: none;
 }
+
