@@ -5,14 +5,14 @@ body{
 }
 
 #homepage{
-    background-image: url('./earth-bkrnd.jpg');
+    background-image: url('./graphics/earth-bkrnd.jpg');
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-color: #171544;
 }
 
 #AgOwnership{
-    background-image: url('./AgriculturePhoto.jpg');
+    background-image: url('./graphics/AgriculturePhoto.jpg');
     background-size: 100vw 60vh;
     background-repeat: no-repeat;
     background-color: #171544;
