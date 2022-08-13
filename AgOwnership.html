@@ -45,9 +45,7 @@
             </div>
         </div>
     </div>
-    
-             
-         
+      
     <div class = "container text-white">
         <div class = "row">
             <div class = "col-1"></div>
@@ -79,24 +77,79 @@
                     and can be accessed for free as a shapefile through a user-friendly geospatial data portal. Perfect! Well, almost perfect. 
                     The survey is not offered in every country, or every year, so there is a lot of temporal and spatial variety that we need to control for.
                     <br><br>
-                    The second requirement was quite a bit more difficult to put together. We decided to use a standardized 
-                    precipitation index, or SPEI, to measure environmental stress. 
+                    The second requirement was quite a bit more challenging to put together. We decided to use a standardized precipitation index, or SPEI, to measure environmental stress. 
+                    Using SPEI allows for easy comparison between countries at different times and places because it is recorded as a standard deviation above or below the mean for that location. 
+                    SPEI is calculated using varying temporal windows, generally in terms of months. The most basic form of SPEI would probably be the 12-month SPEI, or SPEI12. A SPEI12 for any
+                    given location at any given time would tell how the year of precipitation previous to that given time compared to all other years in the dataset, recorded as a standard deviation 
+                    above or below the mean. A negative value would imply a dry year, while a positive value would imply a wet year. Simple, right? Not quite. There are several complicating factors. The first issue is that if we look only at environmental stress during the year of a DHS survey, we don’t learn anything because 
+                    the economic effects of that growing season might not be felt until later years. Instead, we want to look at the years preceding a survey. The number of years we look at is arbitrary,
+                    but we settled on five. This also allows us to see what happens when multiple years of drought occur within our five-year windows.
                 </p>
             </div>
             <div class= "col-1"></div>
         </div>
-        <div class = "row" style = "height:5vh"></div>
+
         <div class = "row">
             <div class = "col-1"></div>
-            <div class = "col-lg-5"></div>
-            <div class = "col-lg-5"><img class="img-fluid" src="./graphics/AgOwnershipCodeModel.png"></div>
+            <div class = "col">
+                <p> 
+                <br><br>
+                The second issue is that if we used a SPEI12, we would be capturing an entire years-worth of weather events, and we are only interested in weather events occurring during or near the 
+                growing season for each unit. So instead of a 12-month SPEI, we can use a 3-month SPEI or SPEI3. Now, for any given date, we can compare the previous three months of precipitation to 
+                those same three months in the rest of the dataset. But the growing season can vary dramatically both between and within countries. So, we need to know each administrative unit's growing 
+                season months. This might sound tricky, but lucky for us, that dataset already exists! Anomaly Hotspots of Agricultural Production, or ASAP, is a dataset commissioned by the European Union 
+                Joint Research Center to help warn of agricultural anomalies worldwide. They provide phenological growing season data as part of that dataset. So, we took that phenological growing season data 
+                (provided as a raster) and used zonal statistics to find the mean start and end months for each of our administrative units.
+                </p>
+            </div>
+            <div class = "col-lg text-center">
+                <img class="img-fluid pt-4 pb-4" style = "max-height:70vh;" src="./graphics/thesisfigures/SF6_PhenoRasterAndZonalMean.png">
+            </div>
+            <div class = "col-1"></div>
+        </div>
+
+
+        <div class = "row">
+            <div class = "col-1"></div>
+            <div class = "col">
+
+                <p>Now that we had everything we needed, it was time for data processing. 
+                For each administrative unit (during any given year), we completed the 
+                following process to find the mean growing season SPEI03 for each of the 
+                five years previous to that administrative unit's survey year. 
+                (The actual R code for this process can be viewed on my GitHub page.) 
+                </p>
+                <br><br>
+                <ol>
+                    <li>We identify the five years previous to the working unit’s survey year. </li>
+                    <li>We identify and extract the SPEI03 data corresponding to the growing season months of each of those five years.</li>
+                    <li>For each year, we convert those months of data into rasters and calculate a zonal mean of each using the geometry of the administrative unit.</li>
+                    <li>We average each of those values together to calculate one SPEI03 value for that year.</li>
+                </ol>
+            </div>
+            <div class = "col-lg text-center">
+                <img class="img-fluid pt-4 pb-4" style = "max-height:70vh;" src="./graphics/AgOwnershipCodeModel.png">
+            </div>
+            <div class = "col-1"></div>
+        </div>
+        <div class = "row">
+            <div class = "col-1"></div>
+            <div class = "col">
+                <p>Once this process was complete, we were ready to model. We just had to determine how we would like to operationalize these values. 
+                    We settled on three operationalizations, each a distinct independent variable.
+                </p>
+                <ol>
+                    <li>SPEI03 < -.05 (The number of the five years previous to the survey year with SPEI03 < -.05) </li>
+                    <li>SPEI03 < -1 (The number of the five years previous to the survey year with SPEI03 <-1)</li>
+                    <li>We average each of those values together to calculate one SPEI03 value for that year.</li>
+                </ol>
+                <img class = "img-fluid" src = "./graphics/thesisfigures/F3_AfricaMapsV2.png"></div>
             <div class = "col-1"></div>
         </div>
     </div>
 
     <div class = "row" style = "height:10vh"></div>
 
-  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
