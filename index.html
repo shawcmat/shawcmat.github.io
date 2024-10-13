@@ -1,63 +1,110 @@
-<!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <title> GEOG 6150 - Matthew Shawcroft</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href = "style.css" rel = "stylesheet">
+    <script src="https://kit.fontawesome.com/828685886c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-
-    <!--- GEOG 6150: Data Visualization -->
-    <!--- Author: Matthew Shawcroft -->
-    <!--- Produced 3/28/2022 -->
-
-    <div id = 'header'>
-        <h3 class = "thick">GEOG 5150/6150</h3>
-        <ul>
-            <li> <a href = "./content.html"> Home </a></li>
-            <li> <a href = "https://geog.utah.edu">  UofU Geography</a> </li>
-            <li> <a href = "./content.html" > Final Project </a> </li>
-        </ul>
+<body id = "homepage">
+  <div class = "firstpage">
+    <div class = "container-fluid header">
     </div>
 
-    <div id = "left-nav" class = "thick">
-        <h4> My Projects</h4>
-            <p> <a href = "./content.html"> Lab 1 </a></p>
-            <p> <a href = "./content.html"> Lab 2</a> </p>
-            <p> <a href = "./content.html"> Lab 3</a> </p>
-
+    <div class = "container text-center introduction">
+      <div class = "container w-50 rounded introtext pb-3 pt-3 mb-3">
+        <h1 class = "display-3 text-white"> Matthew Shawcroft</h1>
+        <h2 class = "text-white"> Geospatial Analyst </h2>
+      </div>
+      <img src="./graphics/profilepic.jpg" class = "img-fluid img-thumbnail rounded-circle mt-3" style = "width:175px;height:175px;">
+      <div class = "row justify-content-md-center mt-5">
+        <div class = "col-md-3 text-white buttontext pt-3 pb-2"> <a href = "#About-me"><h3>About me</h3></a></div>
+        <div class = "col-md-auto"></div>
+        <div class = "col-md-3 text-white buttontext pt-3 pb-2"> <a href = "#Portfolio"> <h3>Portfolio</h3></a></div>
+        <div class = "col-md-auto"></div>
+        <div class = "col-md-3 text-white buttontext pt-3 pb-2"> <a href = "#Contact"><h3>Contact</h3></a></div>
+      </div>
     </div>
+  </div>
 
-    <div id = "content">
-        <img src = "./profilepic.jpg" alt = "Picture of Matthew Shawcroft smiling." width = 200px height=200px>
-        <div id = "info">
-            <p> <strong> Matthew Shawcroft</strong></p>
-            <p> <strong> Program: </strong>M.S</p>
-            <p> <strong> Major: </strong>Geography</p>
-            <p> <strong> Email: </strong> <a href = "mailto:matthew.shawcroft@utah.edu">matthew.shawcroft@utah.edu</a></p>
-        </div> 
-        <br>  
+  <div class = "container text-white">
+    <div class = "row" style = "height:10vh"></div>
+    <div class = "row justify-content-center text-left">
+      <div class = "col-md-3"></div>
+      <div class = "col-md">
+        <h1 id = "About-me">Who am I?</h1> 
         <br>
+        <p>I am a geospatial data analyst, developer, and researcher, passionate about solving real world problems using creative technological solutions. 
+          Holding a master's degree in Geography, I have expertise in GIS, data science, environmental remote sensing, and spatial statistics.</p>
         <br>
-        <h4> Research Interests:</h4>
-        <ul>
-            <li> The influence of environmental stress on political instbility and violence.</li>
-            <li> American political instability and violent radicalism.</li>
-        </ul>
+        <h2>Flexibility and focus.</h2>
+        <br>
+        <p>The landscape of data science is always changing, making flexible adaptation to new technologies an important aspect of professional work. 
+          Having a fundamental knowledge of how data is structured allows for quick transitions between technology stacks. 
+          Some of the technologies I have experience with include:</p>
+          <ul>
+            <li>Python, including packages such as NumPy, Pandas, Scikit-Learn, Pysal, and rasterio. </li>
+            <li>R, including libraries such SF, Raster, Terra, and Tidyverse.</li>
+            <li>Web development, including HTML, CSS, and Javascript.</li>
+            <li>ESRI ArcGIS products, including ArcGIS Pro and ArcGIS online, as well as ArcPy, and the ArcGIS javascript API.</li>
+            <li>Open-source GIS standard frameworks, including GEOS, GDAL, and PROJ. </li>
+          </ul>
+      </div>
+      <div class = "col-md-3"></div>
+    </div>
+  </div>
 
+  <div class = "container-fluid header">
+  </div>
+
+  <div class = "container text-white portfolio">
+    <h1 id = "Portfolio" class = "text-center">Portfolio</h1>
+
+    <div class = "row" style = "height:5vh"></div>
+
+    <div class = "row justify-content-center no-gutters">
+      <div class = "col-sm-3 pt-3 pb-2 text-center">
+        <a href = "./AgOwnership.html"><img src = "./graphics/AgOwnershipThumb.png" class = "img-fluid img-thumbnail foliothumb"></a>
+      </div>
+      <div class = "col-sm-6 text-left d-flex align-items-center"> Exploring the effects of environmental stress on agricultural economies through the use of Bayesian statistics and remotely sensed datasets. Submitted for plublication in the journal "Population and the Environment".
+      </div>
     </div>
 
-    <div id = 'footer'>
-        <ul>
-            <li> <a href = "./content.html"> Home </a></li>
-            <li> <a href = "https://geog.utah.edu">  UofU Geography</a> </li>
-            <li> <a href = "./content.html" > Final Project </a> </li>
-        </ul> 
-        <br>
-        <div class = "thick">
-            <p>Copyright 2022</p>
-            <p> <strong> Matthew Shawcroft</strong></p>
-            <p> All rights reserved</p>
-        </div>
+    <div class = "row justify-content-center no-gutters">
+      <div class = "col-sm-3 pt-3 pb-2 text-center">
+        <a href = "./AgOwnership.html"><img src = "./graphics/LeafletProj1.png" class = "img-fluid img-thumbnail foliothumb"></a>
+      </div>
+      <div class = "col-sm-6 text-left d-flex align-items-center"> Description Description Description Description Description
+      </div>
     </div>
 
+    <div class = "row justify-content-center no-gutters">
+      <div class = "col-sm-3 pt-3 pb-2 text-center">
+        <a href = "./AgOwnership.html"><img src = "./graphics/CovidProj1.png" class = "img-fluid img-thumbnail foliothumb"></a>
+      </div>
+      <div class = "col-sm-6 text-left d-flex align-items-center"> Description Description Description Description Description
+      </div>
+    </div>
+
+
+  <div class = "container text-white">
+    <div class = "row" style = "height:5vh"></div>
+    <div class = "row justify-content-center text-center align-middle">
+      <h1 id = "Contact">Contact information</h1> 
+      <div class = "row" style = "height:5vh"></div>
+        <div class = "row justify-content-center">
+          <div class = "col-md-6 text-center">
+            <p> <a href = "mailto:shawcroft.matt@gmail.com"><i class = "fa-solid fa-envelope fa-2x"></i>&ensp;shawcroft.matt@gmail.com</p></a> 
+            <p> <a href = "https://www.linkedin.com/in/matt-shawcroft"><i class = "fa-brands fa-linkedin fa-2x"></i>&ensp;https://www.linkedin.com/in/matt-shawcroft</p></a>
+          </div>
+              
+  </div>
+  <div class = "row" style = "height:10vh"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
+
+</html>
