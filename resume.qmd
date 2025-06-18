@@ -1,0 +1,75 @@
+---
+title: "Resume/Curriculum vitae"
+date: last-modified
+format:
+    html: default 
+    pdf: default
+---
+
+# Matthew Shawcroft
+
+# Education
+
+**Master of Science, University of Utah**, Geography, 2022
+
+Thesis: An analysis of the effects of environmental stress on agricultural land economies using Bayesian spatial modeling and remotely sensed datasets. Published in “Population and Environment”, September 2023.
+
+**Bachelor's of Science, Brigham Young University,** Geospatial Intelligence, 2020
+
+3.9 GPA, 4X dean's list. Graduated *cum laude.*
+
+# Technical skill sets
+
+**Programming:** Python, R, Javascript, Git
+
+**Statistics:** Machine learning, Spatial modeling, Bayesian linear modeling
+
+**Concepts:** Remote sensing, Photogrammetry, Object-based image analysis, Lidar, Open-source GIS
+
+**GIS tools and software:** Google earth engine, ArcGIS Pro, QGIS, AGISOFT Metashape
+
+# Professional experience
+
+**U.S. Geological Survey**, Geographer, Davis, CA, 2024- Present.
+
+Provided technical guidance to assist others in applying remote sensing and spatial data across a wide variety of ecological research projects involving coastal wetlands and post-wildfire ecosystems. Managed large spatial datasets, developed spatial data products, and utilized statistical analysis to provide insight into land management issues. Reviewed scientific and technical reports and synthesized best practices for improving scientific methodologies and applying geospatial theory to ecological questions. Participated in writing professional journal articles and preparing data reports.
+
+**CSU Natural Resource Ecology Lab**, Remote Sensing Ecologist, Fort Collins CO, 2022-2024
+
+Collaborated in a professional lab environment producing high quality research in the field of environmental remote sensing. Performed technical analysis of novel data products utilizing cutting edge methodologies, including photogrammetry and object-based image analysis (OBIA). Directed and trained undergraduate research assistants on QA/QC practices and managed project deadlines. Participated in writing scientific articles and data reports.
+
+**University of Utah**, Graduate Instructor, Salt Lake City UT, 2020-2022
+
+Instructor of record for the Advanced Concepts in GIS course at the University of Utah. Taught advanced GIS methodology to hundreds of undergraduate students at the University of Utah while receiving extremely positive student ratings. Helped students master using the ArcGIS Pro platform to perform terrain analysis, remote sensing of land-use changes, cartographic design, spatial interpolation, cluster analysis, point pattern analysis, spatial statistics, and more. Advised student research projects and taught sampling methodologies and best practices for in-the-field data collection.
+
+**Draper City**, GIS Technician, Draper UT, Apr 2021 - Oct 2021
+
+Increased efficiency of geospatial data management in the organization through the use of Python scripting. Created and maintained an extensive, high-quality spatial database of city utilities and property through the use of aerial imagery and extensive topographic field work utilizing GPS systems. Developed public-facing maps, applications, and other visualizations.
+
+**Jones Lang Lasalle Inc.,** Riyadh KSA, Jun 2019 - Aug 2019
+
+Performed innovative technical research into the creation of a next-generation “digital twin” smart city. Streamlined database structures and solved data interoperability problems. Aided in the creation of one-to-one digital replications of urban structures by conducting the field collection and processing of high density point cloud datasets using terrestrial laser scanners.
+
+# Publications
+
+Buffington, K., Esque, T., DeFalco, L., Shawcroft, M., Thorne, K., Vegetation impacts following desert fires in and around the Mojave National Preserve, California, USA. Fire Ecology. (In Progress)
+
+Shawcroft, M., Wright, M., Buffington, K., Mantgrem, P.J, Rankin, L., Thorne, K., Patterns of vegetation loss following fire in Lava Beds National Monument. Journal TBD. (In Progress)
+
+Wright, M., Shawcroft, M., Buffington, K., Rankin, L., Mantgrem, P.J, Thorne, K., Mapping delayed mortality in mixed conifer forests following the 2018 Carr Fire in California, USA. Journal TBD. (In Progress)
+
+Linke, A., & Shawcroft, M. (2023). The effects of environmental stress on global agricultural landownership. Population and Environment, 45(3), 19.
+
+Linke, A., Leutert, S., Busby, J., Duque, M., Brewer, S., Shawcroft, M. (Accepted for publication). No Llueve Como Antes: Dry Growing Seasons Predict Central American Migration to the US. The Proceedings of the National Academy of Sciences.
+
+# Presentations
+
+Jody C. Vogeler, Patrick A. Fekety, Lisa Elliott, Matthew Shawcroft, Steven K. Filippelli, Brent Barry, Joseph D. Holbrook, and Kerri T. Vierling.  Spaceborne fusion for terrestrial forests: How do GEDI data fusions characterize forest structure and wildlife habitat? Silvilaser - London, UK, September 2023.
+
+Elise Pletcher, Steven K. Filippelli, Perry Williams, Matthew Shawcroft, Jody C. Vogeler, and Robert K. Shriver. Scaling demographic approaches to forecast woodland expansion and contraction in the Great Basin. ESA - Portland, OR, September 2023.
+
+Elise Pletcher, Steven K. Filippelli, Perry Williams, Matthew Shawcroft, Jody C. Vogeler, and Robert K. Shriver. Remote Sensing products as demographic data: scaling traditional demographic approaches to forecast pinyon-juniper woodland expansion and contraction in the Great Basin. Society for Range Management Annual Conference – Boise, ID, February 2023.
+
+Matthew Shawcroft, Andrew Linke. Farming at the Fringe: Environmental stress and Agricultural Landownership. ISA annual conference – Nashville, TN, April 2022.
+
+Matthew Shawcroft, Andrew Linke. Effects of Environmental Stress on Agricultural Landownership in 16 Countries. American Association of Geographers annual meeting – Held remotely, February 2022.
