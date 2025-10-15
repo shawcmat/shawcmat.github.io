@@ -8,10 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: resume.qmd
-        text: Resume/Vita
       - href: portfolio.qmd
         text: Portfolio
+      - href: resume.qmd
+        text: Resume/Vita
 
 format:
   html:

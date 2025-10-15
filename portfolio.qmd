@@ -1,13 +1,70 @@
 ---
 title: "Portfolio"
+format:
+    html:
+        css: styles.css
 ---
 
-# [Wildfires at LavaBeds National Monument](portfolio_pages/LABE.qmd)
+::::::: portfolio_block
+::: block_title
+**Modeling Fire Impacts in Western Shrublands**
+:::
 
-# [Phenological machine learning in Wetlands](phenoML.quarto)
+::::: block_content
+::: block_thumb
+![](./graphics/AgOwnershipThumb.png)
+:::
 
-# [Performing object extraction on historic aerial photos](portfolio_pages/historicOBIA.qmd)
+::: block_description
+Western landscapes face increasing numbers of wildfire. This project used machine learning to map the extent and severity of vegetation loss following fires in Lava Beds National Monument, northern California.
+:::
+:::::
+:::::::
 
-# [The impacts of rainfall on land ownership: A Bayesian approach](portfolio_pages/AgOwnership.qmd)
+::::::: portfolio_block
+::: block_title
+**Phenological Machine Learning in Wetlands**
+:::
 
-The adverse effects of climate change are likely to harm food supplies and agricultural livelihoods worldwide. Faced with challenges resulting from increasingly unpredictable weather patterns, some farmers might be forced abandon their occupation. A dramatic increase in landless population could result in increased levels of social and political conflict. After analyzing agriculture and precipitation data from a large number of countries worldwide, we found that drier than average growing season weather is associated with declining landownership rates. For every consecutive dry growing season before a land ownership survey, the agricultural land ownership rate of the affected region falls by 2.51%. This article is an attempt to describe the process behind that analysis.
+::::: block_content
+::: block_thumb
+![](./graphics/AgOwnershipThumb.png)
+:::
+
+::: block_description
+Prediction of specific wetland species through remote sensing can be difficult due to very small differences in spectral signatures. Utilizing phenological data can improve accuracy.
+:::
+:::::
+:::::::
+
+::::::: portfolio_block
+::: block_title
+**Performing Object Extraction in historical Aerial Imagery.**
+:::
+
+::::: block_content
+::: block_thumb
+![](./graphics/AgOwnershipThumb.png)
+:::
+
+::: block_description
+Historical black and white aerial imagery is valuable source of long-term environmental data, but the quality of these images can make utilization difficult.
+:::
+:::::
+:::::::
+
+::::::: portfolio_block
+::: block_title
+**The impacts of rainfall on land ownership: A Bayesian approach**
+:::
+
+::::: block_content
+::: block_thumb
+![](./graphics/AgOwnershipThumb.png)
+:::
+
+::: block_description
+An bayesian analysis of the effect of annual rainfall patterns on rates of landownership in a global sample of countries.
+:::
+:::::
+:::::::
