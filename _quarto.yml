@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: ""
+  navbar:
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: portfolio.qmd
+        text: Portfolio
+      - href: resume.qmd
+        text: Resume/Vita
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme:
+      light: [flatly, theme.scss]
+      dark: [darkly, theme-dark.scss]
+    css: styles.css
+    toc: true
+
+
+

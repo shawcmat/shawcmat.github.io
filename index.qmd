@@ -1,0 +1,23 @@
+---
+title: "About me"
+---
+
+![](./graphics/profilepic.jpg){fig-align="left" width="25%"}
+
+I am a geospatial researcher, developer, and data analyst passionate about solving real world problems using creative technological solutions. With specializations in landscape ecology, spatial modeling, and geospatial methodologies, my work has focused on understanding the large-scale implications of human/environment interactions. As a member of the Natural Resource Ecology Laboratory at CSU my work involved using photogrammetry and Object-based image classification to explore encroachment of Pinyon-Juniper woodlands across western landscapes. As a geographer with the USGS my work focused on understanding fire-induced regime change in dry landscapes across the western USA, and how climate change could increase the dominance of invasive species.
+
+## Flexibility and focus
+
+The landscape of spatial data science is always changing, making flexible adaptation to new technologies an important aspect of professional work. Having a fundamental knowledge of how data is structured allows for quick transitions between technology stacks. Some of the technologies I have experience with include:
+
+-   Machine learning techniques for model development, including Neural Networks.
+
+-   Passive and active remote sensing, including Lidar.
+
+-   Python, including packages such as NumPy, Pandas, Scikit-Learn, Pysal, and rasterio.
+
+-   R, including libraries such as SF and Terra.
+
+-   ESRI ArcGIS products, including ArcGIS Pro and ArcGIS online, ArcPy, and the ArcGIS javascript API.
+
+-   Open-source GIS standard frameworks, including GEOS, GDAL, and PROJ.
