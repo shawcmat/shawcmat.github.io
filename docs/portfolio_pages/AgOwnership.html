@@ -323,14 +323,14 @@ ul.task-list li input[type="checkbox"] {
 <p>The second requirement was quite a bit more challenging. We decided to use the standardized precipitation index, or SPEI, to measure environmental stress. Using the SPEI allows for easy comparison between countries at different times and places because it is recorded as a standard deviation above or below the mean for that location. SPEI is calculated using varying temporal windows, generally in terms of months. The most basic form of SPEI would probably be the 12-month SPEI, or SPEI12. A SPEI12 for any given location at any given time would describe how the year of precipitation previous to that given time compared to all other years in the dataset, recorded as a standard deviation above or below the mean. A negative value would imply a dry year, while a positive value would imply a wet year. But, that doesn’t mean we can just grab the SPEI data for the years of our DHS survey and call it a day. If we look only at environmental stress during the year of a DHS survey, we don’t learn anything because the economic effects of that growing season might not be felt until later years. Instead, we want to look at the years preceding a survey. The number of years we look at is arbitrary, but we settled on five. This also allows us to see what happens when multiple years of drought occur within our five-year windows.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../graphics/thesisfigures\SF5_SingleMonthSPEI03RasterAndZonalMean.png" class="img-fluid figure-img"></p>
+<p><img src="../graphics/thesisfigures/SF5_SingleMonthSPEI03RasterAndZonalMean.png" class="img-fluid figure-img"></p>
 <figcaption>Raw SPEI03 values and zonal means for each administrative unit in Afghanistan</figcaption>
 </figure>
 </div>
 <p>A second issue is that if we use a 12 month SPEI, we would be capturing an entire years-worth of weather events, and we are only interested in weather events occurring during or near the growing season for each unit. So instead of a 12-month SPEI, or SPEI12, we can use a 3-month SPEI or SPEI3. Now, for any given date, we can compare the previous three months of precipitation to those same three months in the rest of the dataset. But this presents another issue. Growing seasons can vary dramatically both between and within countries. We need to know the exact growing season for each administrative unit in our study, in the year of each DHS survey. This might sound tricky, but lucky for us, that dataset already exists! Anomaly Hotspotsof Agricultural Production, or ASAP, is a dataset commissioned by the European Union Joint Research Center to help warn of agricultural anomalies worldwide. They provide phenological growing season data as part of that dataset. So, we took that phenological growing season data from each year (provided as a raster) and used zonal statistics to find the average start and end months for each of our administrative units.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../graphics/thesisfigures\SF6_PhenoRasterAndZonalMean.png" class="img-fluid figure-img" width="400"></p>
+<p><img src="../graphics/thesisfigures/SF6_PhenoRasterAndZonalMean.png" class="img-fluid figure-img" width="400"></p>
 <figcaption>Start of growing season raw data and zonal mean for Afghanistan.</figcaption>
 </figure>
 </div>
@@ -343,7 +343,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../graphics/thesisfigures\processing_flowchart_light.png" class="img-fluid figure-img"></p>
+<p><img src="../graphics/thesisfigures/processing_flowchart_light.png" class="img-fluid figure-img"></p>
 <figcaption>Flow chart for data processing.</figcaption>
 </figure>
 </div>

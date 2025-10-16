@@ -1,7 +1,7 @@
 /* css styles */
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .portfolio_block{
