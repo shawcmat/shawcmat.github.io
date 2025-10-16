@@ -288,8 +288,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#phenological-machine-learning-of-wetland-vegetation" id="toc-phenological-machine-learning-of-wetland-vegetation" class="nav-link active" data-scroll-target="#phenological-machine-learning-of-wetland-vegetation">Phenological Machine Learning of Wetland Vegetation</a>
+  <ul class="collapse">
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The Problem</a></li>
+  <li><a href="#in-progress" id="toc-in-progress" class="nav-link" data-scroll-target="#in-progress">In progress…</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -298,8 +308,31 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="phenological-machine-learning-of-wetland-vegetation" class="level1">
+<h1>Phenological Machine Learning of Wetland Vegetation</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2097259713.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>During my time with the USGS, we were partnered to provide science support for a major marsh restoration in northern California known as the <a href="https://water.ca.gov/Programs/Integrated-Regional-Water-Management/Delta-Ecosystem-Enhancement-Program/Dutch-Slough-Tidal-Restoration-Project">Dutch Slough Tidal Restoration Project</a>. While the restoration itself had been completed several years prior, our project partners were interested in exploring how vegetation dynamics had been progressing. They were particularly interested in understanding the dynamics between two different species: <em>Schoenoplectus acutus</em>, also commonly known as Tule, and <em>Typha latifolia,</em> commonly known as common cattail.</p>
+<p>A lot of effort had been taken during the marsh restoration to plant Tule as the primary vegetation cover throughout the marsh. The cattail, meanwhile, was not planted but spread to the site naturally. Our partners were concerned that the wild cattail had been spreading and out-competing the planted Tule, but there was no easy way to distinguish between the two plants across the whole site.</p>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../graphics/dutchslough/DWRphoto.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+</figure>
+</div>
+<p>It is easy to grasp the basics of land cover prediction using machine learning. Modern high-resolution space-borne remote sensing platforms such as Sentinel-2 collect a wide range of spectral bands, simulating almost hyper spectral levels of resolution. This amount of spectral data allows us to predict land cover based on small differences in spectral signatures. Machine learning algorithms allow us to essentially automate that process into a smooth and repeatable workflow that works well across large areas. However, challenges can still arise when the desired classification is distinguishing between extremely similar land covers. For example, it is easy to distinguish between bare earth, water, and vegetation cover. However, distinguishing between specific types of vegetation cover is more challenging, especially when the species involved have similar spectral signatures, as was the case at this particular site.</p>
+<p>From above, Tule and Cattail look very similar, and our initial attempt at classification between the two species using Sentinel-2 imagery and a random forest model resulted in extremely poor prediction accuracy. However, my time spent trying to improve desert and shrubland vegetation models had taught me that even if two species look extremely similar at a specific given moment in time, if we compare the entire phenological cycle between two species, occasionally we - or rather, our models - can find small seasonal differences which drastically improve prediction accuracy.</p>
+</section>
+<section id="in-progress" class="level2">
+<h2 class="anchored" data-anchor-id="in-progress">In progress…</h2>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
