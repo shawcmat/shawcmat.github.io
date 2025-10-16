@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,18 +32,19 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3adec9b42f2f14c6dec4227f50f6958d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-1f7ff0b01efe7432265ca4867983b71d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3adec9b42f2f14c6dec4227f50f6958d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-de7d29388a066706c5c72c23b452728f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-819238abdc482e854f0974f3422072f5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-de7d29388a066706c5c72c23b452728f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -253,6 +254,10 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -318,14 +323,14 @@ ul.task-list li input[type="checkbox"] {
 <p>The second requirement was quite a bit more challenging. We decided to use the standardized precipitation index, or SPEI, to measure environmental stress. Using the SPEI allows for easy comparison between countries at different times and places because it is recorded as a standard deviation above or below the mean for that location. SPEI is calculated using varying temporal windows, generally in terms of months. The most basic form of SPEI would probably be the 12-month SPEI, or SPEI12. A SPEI12 for any given location at any given time would describe how the year of precipitation previous to that given time compared to all other years in the dataset, recorded as a standard deviation above or below the mean. A negative value would imply a dry year, while a positive value would imply a wet year. But, that doesn’t mean we can just grab the SPEI data for the years of our DHS survey and call it a day. If we look only at environmental stress during the year of a DHS survey, we don’t learn anything because the economic effects of that growing season might not be felt until later years. Instead, we want to look at the years preceding a survey. The number of years we look at is arbitrary, but we settled on five. This also allows us to see what happens when multiple years of drought occur within our five-year windows.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\graphics/thesisfigures\SF5_SingleMonthSPEI03RasterAndZonalMean.png" class="img-fluid figure-img"></p>
+<p><img src="../graphics/thesisfigures\SF5_SingleMonthSPEI03RasterAndZonalMean.png" class="img-fluid figure-img"></p>
 <figcaption>Raw SPEI03 values and zonal means for each administrative unit in Afghanistan</figcaption>
 </figure>
 </div>
 <p>A second issue is that if we use a 12 month SPEI, we would be capturing an entire years-worth of weather events, and we are only interested in weather events occurring during or near the growing season for each unit. So instead of a 12-month SPEI, or SPEI12, we can use a 3-month SPEI or SPEI3. Now, for any given date, we can compare the previous three months of precipitation to those same three months in the rest of the dataset. But this presents another issue. Growing seasons can vary dramatically both between and within countries. We need to know the exact growing season for each administrative unit in our study, in the year of each DHS survey. This might sound tricky, but lucky for us, that dataset already exists! Anomaly Hotspotsof Agricultural Production, or ASAP, is a dataset commissioned by the European Union Joint Research Center to help warn of agricultural anomalies worldwide. They provide phenological growing season data as part of that dataset. So, we took that phenological growing season data from each year (provided as a raster) and used zonal statistics to find the average start and end months for each of our administrative units.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\graphics/thesisfigures\SF6_PhenoRasterAndZonalMean.png" class="img-fluid figure-img" width="400"></p>
+<p><img src="../graphics/thesisfigures\SF6_PhenoRasterAndZonalMean.png" class="img-fluid figure-img" width="400"></p>
 <figcaption>Start of growing season raw data and zonal mean for Afghanistan.</figcaption>
 </figure>
 </div>
@@ -338,15 +343,16 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\graphics/thesisfigures\processing_flowchart.png" class="img-fluid figure-img"></p>
+<p><img src="../graphics/thesisfigures\processing_flowchart_light.png" class="img-fluid figure-img"></p>
 <figcaption>Flow chart for data processing.</figcaption>
 </figure>
 </div>
-<p>The final result of this process is a dataset of subnational agricultural landownership data covering 50 countries on five continents between 2004 and 2017, with the five preceding years of growing season precipitation data for each admin unit. Pretty impressive!</p>
+<p>The final result of this process is a dataset of sub-national agricultural landownership data covering 50 countries on five continents between 2004 and 2017, with the five preceding years of growing season precipitation data for each admin unit. Pretty impressive!</p>
 </section>
 <section id="modeling" class="level2">
 <h2 class="anchored" data-anchor-id="modeling">Modeling</h2>
-<p>The goal of our analysis was to measure the impact of repeated years of below-average rainfall on levels of levels of land ownership in the affected regions. To do this we first recode our SPEI values to binarily reflect either drought or non-drought conditions. As mentioned above, the SPEI is recorded as a standard deviation above or below the mean. Instead of including these values directly, we instead select a threshold to represent drought conditions, and then we calculate the sum of the five years preceding a DHS survey in a given administrative unit that meet that threshold.</p>
+<p>The goal of our analysis was to model the impact of repeated years of below-average rainfall on levels of levels of land ownership in the affected regions. To do this we operationalize our SPEI03 values three different ways, resulting in three different models. As mentioned above, the SPEI is recorded as a standard deviation above or below the mean. The first approach is to take average SPEI03 values of the five years previous to the survey year and and model those SD values directly. The second and third approaches involve selecting a threshold to represent drought conditions, and then calculating the total number of the five years preceding a DHS survey in a given administrative unit that meet that threshold. This count of years beyond a given SPEI threshold is the actual measurement included in the model. We use a SPEI threshold of -0.5 to represent moderate drought conditions, and a threshold of -1 to represent severe drought conditions. This approach allows us to account for the elasticity of agricultural economics, where singular severe years can be offset by subsequent or antecedent productive years.</p>
+<p>We model these interaction linearly using a bayesian approach to spatial modeling, all performed using the tools included in the <a href="https://www.r-inla.org">R-INLA</a> library.</p>
 
 
 </section>
@@ -417,13 +423,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
