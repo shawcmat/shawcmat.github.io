@@ -5,7 +5,9 @@ project:
 website:
   title: ""
   navbar:
-    search: true
+    title: false
+    logo: graphics/favicon.png
+    search: false
     left:
       - href: index.qmd
         text: Home

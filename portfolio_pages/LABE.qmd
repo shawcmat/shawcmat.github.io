@@ -1,6 +1,6 @@
 # Modeling Fire Impacts in Western Shrublands
 
-Note: Ths analysis is in progress and results are subject to change.
+Note: Ths analysis is in progress and results are subject to change. Code for this project can be viewed on [github.](https://github.com/shawcmat/LABE_fire)
 
 The western United States is no stranger to large wildfires, but drought conditions and climate change have made them increasingly common. As part of my time with the USGS we were contracted by the NPS to explore post-fire vegetation recovery dynamics across western landscapes.
 
